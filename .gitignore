@@ -1,0 +1,15 @@
+# Ignorer la config VS Code
+.vscode/
+
+# Node / dépendances
+node_modules/
+
+# Mac / Linux fichiers système
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environnements
+.env

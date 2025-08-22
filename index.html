@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+		<title>🏮Chemins de Kyoto</title>
+
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Merienda:wght@600;800&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+
+		<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+		<!-- Navigation -->
+		<nav aria-label="Navigation principale">
+			<ul class="liste-nav">
+				<li class="item-nav"><a href="#home">Accueil</a></li>
+				<li class="item-nav"><a href="#asym">Découvrir</a></li>
+				<li class="item-nav"><a href="#itineraire-3j">Programme</a></li>
+				<li class="item-nav"><a href="#tarifs">Nos Offres</a></li>
+				<li class="item-nav"><a href="#contact">Contact</a></li>
+				<li class="item-nav"><a href="#faq">FAQ</a></li>
+			</ul>
+			<img src="ressources/menu.svg" alt="Ouvrir le menu" class="logo-menu" aria-expanded="false" role="button">
+		</nav>
+			
+			
+		
+		<!-- Accueil -->
+		<div class="accueil" id="home">
+			<img src="ressources/logo.png" alt="logo porte japon" class="logo-kyoto">
+			<h1 class="fade-in">Découvrez Kyoto</h1>
+			<p class="sous-titre">La ville impériale du Japon.</p>
+			<a href="#asym" class="btn-accueil">En savoir plus</a>
+		</div>
+
+
+		<!-- Section asymétrique -->
+		<section class="section-asymetrique" id="asym">
+
+			<h2 class="h2 fade-in">🏮Que faire à Kyoto ?</h2>
+
+			<div class="bloc bloc-left bloc-1 fade-in">
+					<div class="bloc-txt-left">
+							<h3>Fushimi Inari-taisha</h3>
+							<p>Marchez à travers des milliers de portiques rouges (torii) serpentant sur la colline d’Inari, un site emblématique de Kyoto dédié à la prospérité. Entre spiritualité, nature et photographie, ce sanctuaire offre une expérience unique et immersive, du lever au coucher du soleil, au cœur de la tradition shinto japonaise.</p>
+							<button class="btn-bloc-left" type="button">En savoir plus</button>
+					</div>
+			</div>
+			<img src="ressources/kyoto-temple.jpg" alt="couloir d'un temple de kyoto" class="img-grid img-grid-1">
+
+			<div class="bloc bloc-right bloc-2 fade-in">
+					<div class="bloc-txt-right">
+							<h3>Kiyomizu-dera</h3>
+							<p>Admirez ce temple bouddhiste classé UNESCO, perché sur les collines de Kyoto. Sa terrasse en bois offre une vue imprenable sur la ville et les érables flamboyants en automne. Entre histoire, spiritualité et paysages sublimes, Kiyomizu-dera est une étape incontournable pour découvrir l’âme culturelle et architecturale du Japon.</p>
+							<button type="button">En savoir plus</button>
+					</div>
+			</div>
+			<img src="ressources/kiyomizu-dera.jpg" alt="kiyomizu dera de kyoto" class="img-grid img-grid-2">
+
+			<div class="bloc bloc-left bloc-3 fade-in">
+					<div class="bloc-txt-left">
+							<h3>Marché Nishiki</h3>
+							<p>Plongez dans l’effervescence culinaire de Kyoto en parcourant cette galerie marchande couverte, surnommée « la cuisine de Kyoto ». Entre stands de produits locaux, spécialités japonaises, épices rares et douceurs traditionnelles, le marché Nishiki est un véritable festin pour les sens, mêlant authenticité, convivialité et découvertes gastronomiques uniques.</p>
+							<button class="btn-bloc-left" type="button">En savoir plus</button>
+					</div>
+			</div>
+			<img src="ressources/nishiki.jpg" alt="Allée couverte et stands du marché Nishiki à Kyoto" class="img-grid img-grid-3">
+
+			<div class="ligne-gauche"></div>
+			<div class="ligne-droite"></div>  
+
+		</section>
+
+
+		<!-- Section parallax -->
+		<section class="parallax">
+			<p>冒険に行く</p>
+			<span>Partez à l'aventure</span>
+		</section>
+			
+
+		<!-- Section Itinéraire -->
+		<section class="section-itinerary" id="itineraire-3j">
+			<h2>Itinéraire 3 jours – Offre Exception</h2>
+			<p class="it-sub">Programme premium avec accès privilégiés, rythme confortable et expériences authentiques.</p>
+		
+			<!-- Onglets jours -->
+			<div class="it-tabs" role="tablist" aria-label="Itinéraire 3 jours">
+				<button class="it-tab" role="tab" aria-selected="true" aria-controls="panel-j1" id="tab-j1">Jour 1</button>
+				<button class="it-tab" role="tab" aria-selected="false" aria-controls="panel-j2" id="tab-j2">Jour 2</button>
+				<button class="it-tab" role="tab" aria-selected="false" aria-controls="panel-j3" id="tab-j3">Jour 3</button>
+			</div>
+		
+			<!-- PANELS -->
+			<div class="it-panels">
+				<!-- Jour 1 -->
+				<div class="it-panel" role="tabpanel" id="panel-j1" aria-labelledby="tab-j1">
+					<ol class="it-timeline">
+						<li>
+							<time>08:00</time>
+							<div class="it-card">
+								<h3>Kiyomizu-dera & ruelles <small>(Sannen-zaka / Ninen-zaka)</small></h3>
+								<p>Ouverture matinale pour profiter du temple et des ruelles sans foule, points photo iconiques.</p>
+							</div>
+						</li>
+						<li>
+							<time>11:00</time>
+							<div class="it-card">
+								<h3>Yasaka-jinja & Maruyama</h3>
+								<p>Sanctuaire shinto et balade au parc. Pause matcha artisanale.</p>
+							</div>
+						</li>
+						<li>
+							<time>13:00</time>
+							<div class="it-card">
+								<h3>Déjeuner kaiseki léger</h3>
+								<p>Menu de saison sélectionné par votre guide (réservation incluse).</p>
+							</div>
+						</li>
+						<li>
+							<time>15:00</time>
+							<div class="it-card">
+								<h3>Gion & quartiers historiques</h3>
+								<p>Maisons de thé, pont Tatsumi-bashi, codes et étiquette des geiko/maiko.</p>
+							</div>
+						</li>
+						<li>
+							<time>19:30</time>
+							<div class="it-card">
+								<h3>Cérémonie du thé privée</h3>
+								<p>Expérience intime avec maître de thé, introduction aux gestes et ustensiles.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+		
+				<!-- Jour 2 -->
+				<div class="it-panel" role="tabpanel" id="panel-j2" aria-labelledby="tab-j2" hidden>
+					<ol class="it-timeline">
+						<li>
+							<time>07:30</time>
+							<div class="it-card">
+								<h3>Arashiyama – Forêt de bambous</h3>
+								<p>Accès tôt pour un cheminement quasi seul, Tenryū-ji et son jardin classé.</p>
+							</div>
+						</li>
+						<li>
+							<time>10:30</time>
+							<div class="it-card">
+								<h3>Rivière Katsura (option bateau)</h3>
+								<p>Balade fluviale paisible ou point de vue depuis Togetsukyō.</p>
+							</div>
+						</li>
+						<li>
+							<time>13:00</time>
+							<div class="it-card">
+								<h3>Déjeuner tofu / yudōfu</h3>
+								<p>Spécialité bouddhiste locale près du temple.</p>
+							</div>
+						</li>
+						<li>
+							<time>15:00</time>
+							<div class="it-card">
+								<h3>Kinkaku-ji (Pavillon d’or)</h3>
+								<p>Visite en fin d’après-midi pour une lumière plus douce sur l’étang.</p>
+							</div>
+						</li>
+						<li>
+							<time>18:30</time>
+							<div class="it-card">
+								<h3>Dîner izakaya haut de gamme</h3>
+								<p>Dégustation guidée (sakes/jizake en option), sélection d’adresses confidentielles.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+		
+				<!-- Jour 3 -->
+				<div class="it-panel" role="tabpanel" id="panel-j3" aria-labelledby="tab-j3" hidden>
+					<ol class="it-timeline">
+						<li>
+							<time>06:30</time>
+							<div class="it-card">
+								<h3>Fushimi Inari-taisha à l’aube</h3>
+								<p>Torii presque déserts, montée jusqu’à Yotsutsuji. Photos accompagnées.</p>
+							</div>
+						</li>
+						<li>
+							<time>10:30</time>
+							<div class="it-card">
+								<h3>Château Nijō</h3>
+								<p>Résidence shogunale, planchers rossignols et peintures d’écoles Kano.</p>
+							</div>
+						</li>
+						<li>
+							<time>12:30</time>
+							<div class="it-card">
+								<h3>Marché Nishiki</h3>
+								<p>Dégustation guidée : tsukemono, dashi, mochi. Stand “coup de cœur” du guide.</p>
+							</div>
+						</li>
+						<li>
+							<time>15:00</time>
+							<div class="it-card">
+								<h3>Palais Impérial / Jardin secret (accès privé)</h3>
+								<p>Selon disponibilité : visite d’un jardin habituellement fermé au public.</p>
+							</div>
+						</li>
+						<li>
+							<time>19:00</time>
+							<div class="it-card">
+								<h3>Dîner kaiseki d’exception</h3>
+								<p>Menu signature saisonnier, accords (option) et transfert retour.</p>
+							</div>
+						</li>
+					</ol>
+				</div>
+			</div>
+			
+		</section>
+
+
+		<!-- Section tarifs -->    
+		<section class="section-tarifs" id="tarifs">
+			<h2 class="h2 fade-in">Laissez-vous guider...</h2>
+
+			<!-- Section Confiance -->
+			<div class="trust-section">
+				<div class="trust-card fade-in">
+					<span class="trust-icon">⭐</span>
+					<p><strong>Plus de 1 200 voyageurs</strong> nous ont déjà fait confiance</p>
+				</div>
+			</div>  
+			
+			<div class="container-tarifs">
+					<div class="cartes-tarifs fade-in">
+							<h4>Classique</h4>
+							<span class="price" data-target="150">0€</span>
+							<p>✔️ Fushimi Inari-taisha</p>
+							<p>✔️ Temple Kiyomizu-dera</p>
+							<p>✔️ Marché Nishiki</p>
+							<p>❌ Quartier de Gion</p>
+							<p>❌ Spectacle folklorique</p>
+							<p>❌ Restaurant typique d’exception</p>
+							<p>❌ Visite sur plusieurs jours</p>
+							<p>❌ Accès privé à des lieux grandioses</p>
+							<a href="#contact">Réservez un guide</a>
+					</div>
+
+					<div class="cartes-tarifs fade-in">
+							<h4>Découverte</h4>
+							<span class="price" data-target="250">0€</span>
+							<p>✔️ Fushimi Inari-taisha</p>
+							<p>✔️ Temple Kiyomizu-dera</p>
+							<p>✔️ Marché Nishiki</p>
+							<p>✔️ Quartier de Gion</p>
+							<p>✔️ Spectacle folklorique</p>
+							<p>❌ Restaurant typique d’exception</p>
+							<p>❌ Visite sur plusieurs jours</p>
+							<p>❌ Accès privé à des lieux grandioses</p>
+							<a href="#contact">Réservez un guide</a>
+					</div>
+
+
+					<div class="cartes-tarifs fade-in">
+							<h4>Exception</h4>
+							<span class="price" data-target="500">0€</span>
+							<p>✔️ Fushimi Inari-taisha</p>
+							<p>✔️ Temple Kiyomizu-dera</p>
+							<p>✔️ Marché Nishiki</p>
+							<p>✔️ Quartier de Gion</p>
+							<p>✔️ Spectacle folklorique</p>
+							<p>✔️ Restaurant typique d’exception</p>
+							<p>✔️ Visite sur plusieurs jours</p>
+							<p>✔️ Accès privé à des lieux grandioses</p>
+							<a href="#contact">Réservez un guide</a>
+					</div>
+			</div>
+
+		</section> 
+
+
+		<!-- Section Contact -->
+		<!-- <section class="section-contact fade-in" id="contact">
+			<h2><strong>Contactez-nous</strong> dès aujourd’hui</h2>
+			<div class="container-form">
+				<form class="form-bloc">
+					<div class="form-groupe">
+							<label for="nom">Entrez votre nom</label>
+							<input type="text" placeholder="Nom" required id="nom">
+					</div>
+
+					<div class="form-groupe">
+							<label for="prenom">Entrez votre prénom</label>
+							<input type="text" placeholder="Prénom" required id="prenom">
+					</div>
+
+					<div class="form-groupe">
+							<label for="email">Entrez votre email</label>
+							<input type="email" placeholder="exemple@mail.com" required id="email" name="email">
+					</div>
+
+					<div class="form-groupe">
+							<textarea  id="txt" placeholder="Écrivez votre message..." required></textarea>
+					</div>
+					
+					<div class="form-groupe">
+							<input type="submit" value="ENVOYER" class="button-sub">
+					</div>
+				</form>
+			</div>
+		</section> -->
+
+
+		<!-- Section Contact -->
+		<section class="section-contact fade-in" id="contact">
+			<div class="contact-wrap">
+        
+				<!-- Colonne gauche : texte + infos -->
+				<aside class="contact-info">
+					<h2>Contactez-nous</h2>
+					<p class="contact-lead">
+						Un expert local vous répond sous 24h.  
+						Parlez-nous de votre projet à Kyoto — on s’occupe du reste.
+					</p>
+
+					<ul class="contact-list">
+						<li>
+							<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M4 4h16v16H4z" fill="none"/>
+                <path d="M20 8.5V18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V8.5l8 5 8-5zM18 6H6l6 4 6-4z" fill="currentColor"/></svg>
+							<a href="mailto:hello@decouvrez-kyoto.jp">hello@decouvrez-kyoto.jp</a>
+						</li>
+						<li>
+							<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.25c1.1.37 2.3.57 3.6.57a1 1 0 0 1 1 1V20a1 1 0 0 1-1 1C11.85 21 3 12.15 3 1a1 1 0 0 1 1-1h3.48a1 1 0 0 1 1 1c0 1.3.2 2.5.57 3.6a1 1 0 0 1-.25 1L6.6 10.8z" fill="currentColor"/>
+              </svg>
+							+81 75 000 0000
+						</li>
+						<li>
+							<svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" fill="currentColor"/>
+              </svg>
+							Kyoto, Japon
+						</li>
+					</ul>
+
+					<div class="contact-badge">
+						⭐ 1 200+ voyageurs nous recommandent
+					</div>
+				</aside>
+
+				<!-- Colonne droite : formulaire -->
+				<div class="contact-form">
+					<form class="form-bloc">
+
+						<div class="form-row">
+							<div class="form-groupe">
+								<label for="nom">Nom</label>
+								<input type="text" id="nom" placeholder="Nom" required>
+							</div>
+							<div class="form-groupe">
+								<label for="prenom">Prénom</label>
+								<input type="text" id="prenom" placeholder="Prénom" required>
+							</div>
+						</div>
+
+						<div class="form-groupe">
+							<label for="email">Email</label>
+							<input type="email" id="email" name="email" placeholder="exemple@mail.com" required>
+						</div>
+
+						<div class="form-groupe">
+							<label for="txt">Votre message</label>
+							<textarea id="txt" placeholder="Parlez-nous de vos dates, envies, budget…" required></textarea>
+						</div>
+
+						<div class="form-actions">
+							<button type="submit" class="button-sub">Envoyer</button>
+							<p class="form-note">Réponse sous 24h ouvrées • Zéro spam</p>
+						</div>
+						
+					</form>
+				</div>
+			</div>
+		</section>
+
+		<!-- Section Témoignages -->
+		<section class="section-testimonials" id="testimonials">
+			<h2>Ils nous font confiance ✨</h2>
+			<div class="testimonials-container">
+					<div class="testimonial-card">
+							<p>"Un voyage magique à Kyoto, parfaitement organisé !"</p>
+							<h4>— Sophie M.</h4>
+					</div>
+					<div class="testimonial-card">
+							<p>"Notre guide connaissait chaque recoin de la ville. Une expérience unique !"</p>
+							<h4>— Julien & Marie</h4>
+					</div>
+					<div class="testimonial-card">
+							<p>"Le marché Nishiki était incroyable, merci pour vos recommandations."</p>
+							<h4>— Alex T.</h4>
+					</div>
+			</div>
+		</section>
+
+		<!-- Section FAQ -->
+		<section class="section-faq fade-in" id="faq">
+			<h2 class="faq-title">
+					FAQ <span class="emoji">❓</span>
+			</h2>
+				
+
+			<div class="faq-container">
+
+				<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+								<span>Dois-je réserver à l’avance ?</span>
+								<svg class="chevron" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<div class="faq-answer" hidden>
+								<p>Idéalement plusieurs semaines, surtout en haute saison.</p>
+						</div>
+				</div>
+
+				<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+								<span>Vos guides parlent-ils plusieurs langues ?</span>
+								<svg class="chevron" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<div class="faq-answer" hidden>
+								<p>Oui, nos guides parlent généralement français, anglais et japonais. D’autres langues peuvent être disponibles sur demande.</p>
+						</div>
+				</div>
+
+				<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+								<span>Proposez-vous des visites privées ?</span>
+								<svg class="chevron" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<div class="faq-answer" hidden>
+								<p>Oui, l’offre <strong>Exception</strong> inclut des visites personnalisées et des accès privilégiés.</p>
+						</div>
+				</div>
+
+				<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+								<span>Les visites sont-elles adaptées aux enfants ?</span>
+								<svg class="chevron" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<div class="faq-answer" hidden>
+								<p>Oui, certaines visites sont idéales pour les familles avec enfants. Nous adaptons le rythme et les activités en conséquence.</p>
+						</div>
+				</div>
+
+				<div class="faq-item">
+						<button class="faq-question" aria-expanded="false">
+								<span>Quelle est la meilleure période pour visiter Kyoto ?</span>
+								<svg class="chevron" width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+						</button>
+						<div class="faq-answer" hidden>
+								<p>Le printemps (mars-avril) et l’automne (octobre-novembre) : cerisiers en fleurs et érables rouges — les plus spectaculaires.</p>
+						</div>
+				</div>
+
+			</div>
+		</section>
+
+
+		<!-- Section Étiquette -->
+		<section class="section-etiquette fade-in" id="etiquette">
+			<p>Étiquette au Japon</p>
+			<div class="etq-grid">
+				<article class="etq-card do">
+					<h3>✔️ Do</h3>
+					<ul>
+						<li>Se déchausser à l’entrée quand c’est demandé.</li>
+						<li>Parler doucement dans les temples et transports.</li>
+						<li>Aligner correctement au torii (ne pas marcher au centre).</li>
+					</ul>
+				</article>
+				<article class="etq-card dont">
+					<h3>✖️ Don’t</h3>
+					<ul>
+						<li>Photographier quelqu’un sans autorisation.</li>
+						<li>Planter ses baguettes verticalement dans le riz.</li>
+						<li>Manger ou boire dans les temples et sanctuaires.</li>
+					</ul>
+				</article>
+			</div>
+		</section>
+
+
+
+
+
+		<footer>
+			&copy; Découvrez Kyoto – Tous droits réservés.
+		</footer>
+
+		<script type="module" src="app.js"></script>
+
+</body>
+</html>
