@@ -110,9 +110,9 @@ nav.scrolled {
 
     border: none;
     border-radius: 12px;
-    background: rgba(255, 255, 255, 0.06); /* léger fond translucide */
-    backdrop-filter: blur(6px); /* effet verre dépoli */
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .25); /* ombre douce */
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(6px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .25);
     transition: background .25s ease, transform .25s ease, box-shadow .25s ease;
 }
 
@@ -182,7 +182,19 @@ body.no-scroll {
     background-size: cover;
     border-bottom: 1px dotted #777;
     padding-top: 1px;
+
+    /* Pour gsap-reveal */
+    position: relative;
+    overflow: hidden;
 }
+
+.gsap-reveal {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .35);
+    transform-origin: left;
+}
+
 
 .logo-kyoto {
     border-radius: 50%;
@@ -606,7 +618,7 @@ body.no-scroll {
 
 .section-tarifs {
     padding-bottom: 60px;
-    border-bottom: 1px dashed #c4bfbf;
+    /* border-bottom: 1px dashed #c4bfbf; */
 }
 
 .section-tarifs h2 {
@@ -699,8 +711,9 @@ body.no-scroll {
         font-size: 35px;
         margin: 60px 0;
     }
+
     .cartes-tarifs h4 {
-        font-size: 30px; 
+        font-size: 30px;
     }
 }
 
@@ -712,6 +725,58 @@ body.no-scroll {
     }
 }
 
+/*------------ Section Partenaires ------------ */
+.partners-marquee {
+    padding: 45px 0;
+
+}
+
+.pm-viewport {
+    overflow: hidden;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+.pm-track {
+    display: flex;
+    gap: 64px;
+    align-items: center;
+    list-style-type: none;
+}
+
+.pm-track img {
+    height: 40px;
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+    .partners-marquee {
+        padding: 35px 0;
+    }
+
+    .pm-track {
+        gap: 48px;
+    }
+
+    .pm-track img {
+        height: 36px;
+    }
+}
+
+@media (max-width: 480px) {
+    .partners-marquee {
+        padding: 30px 0;
+    }
+
+    .pm-track {
+        gap: 32px;
+    }
+
+    .pm-track img {
+        height: 30px;
+    }
+}
 
 
 /* ------- Section Contact ---------- */
@@ -725,7 +790,8 @@ body.no-scroll {
     width: min(1100px, 92%);
     margin: 0 auto;
     display: grid;
-    grid-template-columns: 1.05fr 1fr; /* gauche un poil + large pour le texte */
+    /* gauche un poil + large pour le texte */
+    grid-template-columns: 1.05fr 1fr;
     gap: 28px;
     align-items: start;
 }
@@ -962,7 +1028,8 @@ body.no-scroll {
 
 
 .section-testimonials h2 {
-    font-size: 2rem;
+    font-size: clamp(24px, 2vw, 33px);
+    font-weight: 500;
     margin-bottom: 40px;
     color: #333;
 }
@@ -1000,7 +1067,6 @@ body.no-scroll {
     justify-content: center;
     margin: auto 0 50px 0;
     padding: 0 15px;
-    /* évite que ça colle aux bords */
 }
 
 .trust-card {
@@ -1056,20 +1122,22 @@ body.no-scroll {
 
 /* --- FAQ moderne --- */
 .section-faq {
-    padding: 60px 50px;
+    padding: 60px 50px 40px;
     background: #fff;
 }
 
 .section-faq h2 {
-    font-size: clamp(28px, 4vw, 40px);
+    font-size: clamp(26px, 3vw, 36px);
     text-align: center;
     color: #222;
     margin-bottom: 25px;
 }
 
 .faq-title .emoji {
-    font-size: 0.7em;/* 70% de la taille du texte */
-    vertical-align: middle;/* bien aligné */
+    /* 70% de la taille du texte */
+    font-size: 0.7em;
+    /* bien aligné */
+    vertical-align: middle;
 }
 
 .faq-container {
@@ -1084,7 +1152,8 @@ body.no-scroll {
     border-radius: 14px;
     background: #fff;
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
-    overflow: clip; /* évite le jump lors de l'animation */
+    /* évite le jump lors de l'animation */
+    overflow: clip;
     transition: box-shadow .25s ease, border-color .25s ease;
 }
 
@@ -1150,11 +1219,12 @@ body.no-scroll {
     margin-bottom: 70px;
 }
 
-.section-etiquette p {
+.section-etiquette h2 {
     text-align: center;
     color: #333;
     margin-bottom: 24px;
     font-size: clamp(24px, 2vw, 33px);
+    font-weight: 500;
 }
 
 .etq-grid {
@@ -1285,16 +1355,16 @@ body.no-scroll {
 }
 
 .it-timeline li::before {
-      content: "";
-      position: absolute;
-      left: 16px;
-      top: 8px;
-      width: 18px;
-      height: 18px;
-      border-radius: 50%;
-      background: #fff;
-      border: 3px solid #790808;
-  }
+    content: "";
+    position: absolute;
+    left: 16px;
+    top: 8px;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #fff;
+    border: 3px solid #790808;
+}
 
 .it-timeline time {
     font-weight: 800;
@@ -1343,6 +1413,8 @@ body.no-scroll {
     }
 }
 
+
+
 /*------------ Footer ------------ */
 
 footer {
@@ -1351,7 +1423,3 @@ footer {
     text-align: center;
     padding: 10px 0;
 }
-
-
-
-

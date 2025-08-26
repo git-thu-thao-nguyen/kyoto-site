@@ -1,3 +1,7 @@
+// Animation GSAP : calque sombre se rétracte horizontalement vers la droite pour révéler l’arrière-plan
+gsap.to(".gsap-reveal", { scaleX: 0, duration: 1.1, ease: "power4.inOut", delay: 0.3 });
+
+
 /* ---------------------------------------
    Effet machine à écrire (rejoue à chaque retour sur #home)
 --------------------------------------- */
@@ -5,7 +9,7 @@ const subtitle = document.querySelector(".sous-titre");
 const homeSection = document.querySelector("#home");
 
 if (subtitle && homeSection) {
-    const text = "La ville impériale du Japon.";
+	const text = subtitle.textContent;
     let index = 0;
     let timerId = null;
 
@@ -318,3 +322,32 @@ window.addEventListener('scroll', () => {
 	const scrolled = window.scrollY / (document.body.scrollHeight - window.innerHeight);
 		progress.style.width = `${scrolled * 100}%`;
 });
+
+
+
+/* ---------------------------------------
+	 Partenaires infini avec GSAP
+--------------------------------------- */
+
+document.addEventListener('DOMContentLoaded', partnersLoop);
+
+function partnersLoop() {
+	const track = document.querySelector('.pm-track');
+
+	// Accessibilité : pas d’animation si l’utilisateur réduit les mouvements
+	if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
+
+	// Triple le contenu pour un flux continu (300% de largeur, on défilera d’1/3 (≈33.333%) pour boucler parfaitement)
+	track.innerHTML += track.innerHTML + track.innerHTML;
+
+	// Crée l’animation continue
+	gsap.to(track, {
+		xPercent: -33.3334, // on décale la piste de -33.333% (soit une longueur d’origine)
+		duration: 10,  		// + grand = + lent
+		ease: "none",		// none = vitesse constante	
+		repeat: -1			// -1 = boucle infinie
+	});
+	
+}
+
+

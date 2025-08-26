@@ -1,9 +1,9 @@
 # 🏮 Chemins de Kyoto
 
 Site vitrine touristique mettant en avant **Kyoto** : temples, paysages exceptionnels, gastronomie et itinéraires exclusifs.  
-Présente des **offres de guides locaux** et des expériences premium pour les voyageurs.  
+Il présente des **offres de guides locaux** et des expériences premium pour les voyageurs.  
 
-Conçu comme projet de **portfolio**
+Projet conçu dans un objectif de **portfolio**.
 
 ## 🚀 Démo
 
@@ -19,7 +19,7 @@ Conçu comme projet de **portfolio**
 
 - HTML5
 - CSS3 (Grid, Flexbox, animations, responsive design)
-- JavaScript Vanilla (sans framework externe)
+- JS Vanilla + GSAP (GreenSock Animation Platform)
 
 
 ## 📸 Aperçu
