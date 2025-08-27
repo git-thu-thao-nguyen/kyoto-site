@@ -24,4 +24,5 @@ Projet conçu dans un objectif de **portfolio**.
 
 ## 📸 Aperçu
 
-![Capture d’écran accueil](docs/demo-home.png)
+![Capture d’écran accueil](docs/home-demo.png)
+![Capture d’écran tarif](docs/tarif-demo.png)
