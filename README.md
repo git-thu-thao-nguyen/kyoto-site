@@ -5,17 +5,17 @@ Il présente des **offres de guides locaux** et des expériences premium pour le
 
 Projet conçu dans un objectif de **portfolio**.
 
-## 🚀 Démo
+## Démo
 
 👉 [Lien vers la démo en ligne]
 
-## ✨ Caractéristiques
+## Caractéristiques
 
 - Site **responsive** (ordinateur / tablette / mobile)
 - Design moderne et épuré
 - Animations (fade-in, machine à écrire, barre de progression, confettis 🎉, etc.)
 
-## 🛠️ Technologies
+## Technologies
 
 - HTML5
 - CSS3 (Grid, Flexbox, animations, responsive design)
