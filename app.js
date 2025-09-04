@@ -1,5 +1,7 @@
+"use strict";
+
 // Animation GSAP : calque sombre se rétracte horizontalement vers la droite pour révéler l’arrière-plan
-gsap.to(".gsap-reveal", { scaleX: 0, duration: 1.1, ease: "power4.inOut", delay: 0.3 });
+gsap.to(".gsap-reveal", { scaleX: 0, duration: 1, ease: "power4.inOut", delay: 0.2 });
 
 
 /* ---------------------------------------
